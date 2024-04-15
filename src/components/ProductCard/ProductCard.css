@@ -1,0 +1,220 @@
+.container {
+    width: 100vw;
+    height: auto;
+    margin: 10px; 
+    padding: 10px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .card-image-size {
+    width: 100%;
+    height: auto;
+    border-radius: 10PX;
+  }
+
+  .button-container{
+    background-color: transparent;
+    color: #141414;
+  }
+  .card-image-description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    
+    border-radius: 10px 10PX 0PX 10PX;
+    color: #E5DFD9;
+    background-color: #141414;
+  }
+  
+  .card-image-description {
+    width: 100%;
+    height: auto;
+    font-family: 'Encode Sans';
+    font-size: 14.5px;
+    font-weight: 200;
+    text-align: left;
+    color: #E5DFD9;
+    background-color: #141414;
+    border-radius: 10px 10PX 0PX 10PX;
+    padding: 10PX;
+  }
+  .card-image-category{
+    width: 100%;
+    height: auto;
+    font-family: 'Encode Sans';
+    font-size: 14.5px;
+    font-weight: 200;
+    text-align: left;
+    color: #E5DFD9;
+    background-color: #141414;
+    border-radius: 0PX 0px 0px 0px; 
+    padding: 10PX;
+  }
+  .card-product-price {
+    width: 100%;
+    height: auto;
+    color: #E5DFD9;
+    background-color: #141414;
+    border-radius: 0PX 0PX 0PX 10PX;
+    padding: 10PX;
+    font-size: 14px;
+  }
+  .price-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .card-cart-icon {
+    width: 100%;
+    height: auto;
+    background-color: #141414;
+    font-size: 14px;
+    border-radius: 0PX 0PX 10PX 0PX;
+    text-align: center;
+    padding: 10PX;
+    color: #E5DFD9;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 576px) {
+    /* Small devices (phones) */
+    .container{
+        width: 100VW;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10PX;
+    }
+    .row {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+
+    .card-image-size {
+      width: 100%;
+      height: auto;
+    }
+    
+    .card-image-description-container {
+      width: 100%;
+      height: auto;
+    }
+    
+    .card-image-description {
+      width: 100%;
+      height: auto;
+    }
+    
+    .card-product-price {
+      width: 100%;
+      height: auto;
+    }
+    
+    .card-cart-icon {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media screen and (min-width: 577px) and (max-width: 768px) {
+    /* Medium devices (tablets) */
+    .container{
+        width: 100VW;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .row {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+    .price-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+      }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+    /* Large devices (small laptops and tablets in landscape) */
+    .container{
+        width: 100VW; 
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .row {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+    .price-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+      }
+  }
+  
+  @media screen and (min-width: 993px) {
+    /* Extra large devices (desktops and large laptops) */
+    .container{
+        width: 100VW; 
+        flex-wrap: wrap;
+    }
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .row {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+    .price-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+      }
+  }
+  
